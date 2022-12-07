@@ -20,8 +20,8 @@ let transporter=nodemailer.createTransport({
     port:587,
     secure:false,
     auth:{
-        user:"sumitmern123@gmail.com",
-        pass:"tzoywihimtovlkda"
+        user:"chavanshrutika1999@gmail.com",
+        pass:"byrhrvwkkkamilhm"
     }
 });
 transporter.use('compile', hbs(
@@ -37,7 +37,7 @@ const csrfMiddleware=csurf({
 const app = express();
 
 //database connection
-mongoose.connect("mongodb://localhost:27017/authmongo")
+mongoose.connect("mongodb+srv://shrutikachavan:<password>@cluster0.r3gpwit.mongodb.net/test")
     .then(res => console.log("MongoDB Connected"))
     .catch(err => console.log("Error : " + err));
 //end
